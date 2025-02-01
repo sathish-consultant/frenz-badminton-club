@@ -4,124 +4,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frenz Badminton Club</title>
+
+    <title>Badminton Animation</title>
+    <link rel="stylesheet" href="./css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Frenz Badminton Club</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-bg-navy">
+        <div class="container-fluid">
+            <!-- Brand/Logo -->
+            <a class="navbar-brand logo" href="#" data-bs-toggle="modal" data-bs-target="#logoModal">
+                <img src="./images/Logo-without-bg.png" alt="Logo"> <!-- Replace logo.png with your logo file -->
+            </a>
+            <a class="navbar-brand brand-title" href="#">
+                Leo Badminton Club
+            </a>
+
+            <!-- Toggle Button for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+            <!-- Navbar Links -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-                <ul class="navbar-nav d-flex flex-row">
-                    <li class="nav-item me-3 me-lg-0">
-                        <a class="nav-link" href="#!">
-                            <i class="fas fa-shopping-cart"></i>
-                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
-                    <li class="nav-item me-3 me-lg-0">
-                        <a class="nav-link" href="#!">
-                            <i class="fab fa-twitter"></i>
-                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
                     </li>
-                    <li class="nav-item me-3 me-lg-0">
-                        <a class="nav-link" href="#!">
-                            <i class="fab fa-instagram"></i>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#events">Events</a>
+                    </li>
+                    <!-- Dropdown Menu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#services" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
                         </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#schedule">schedule</a></li>
+                            <li><a class="dropdown-item" href="#community">community</a></li>
+                            <li><a class="dropdown-item" href="#benefits">benefits</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header id="home" class="hero-section text-center text-white">
-        <section>
-            <div id="intro" class="bg-image" style="
-                    background-image: url('./assets/badminton-home-img1.jpg');
-                    height: 100vh;">
-                <div class="hero-inner">
-                    <div class="hero-inner-title">
-                        Frenz Badminton Club
+    <div class="root-section">
+        <div class="hero-section">
+            <div class="background">
+                <div class="animated-lines animated-lines-v1"></div>
+                <div class="animated-lines animated-lines-v2"></div>
+
+                <div class="animated-lines-h animated-lines-h1"></div>
+                <div class="animated-lines-h animated-lines-h2"></div>
+            </div>
+            <div class="foreground">
+                <img src="./images/player-3-fg.png" alt="Badminton Player" class="player">
+                <img src="./images/birdie-1.jpg" alt="Birdie" class="birdie">
+            </div>
+            <div class="hero-text">
+                <div class="typewriter">
+                    <h1 class="first-line">
+                        Sweat
+                    </h1>
+                    <h1 class="second-line">
+                        Strive
+                    </h1>
+                    <h1 class="third-line">
+                        Belong...
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <!-- About Section -->
+            <section id="about" class="section about-section">
+                <div class="container mt-4">
+                    <div class="section-body">
+                        <h1>Welcome to Leo Badminton Club!!</h1>
+                        <h3>Gateway to Fun, Fitness, and Friendship!</h3>
                     </div>
-                    <div class="hero-inner-desc">
-                        <div class="desc-text">
-                            Frenz Badminton Club brings together players of all skill levels to enjoy and excel at the sport. We are more of a family than a club. 
-                            Join us!!!
+                    <div class="section-footer">
+                        <p><a href="#" class="about-join">Join us </a> for a vibrant badminton community and improve
+                            your skills, meet new people, and stay active!
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- Events Section -->
+            <section id="events" class="section event-section">
+                <div class="container mt-4">
+                    <div class="section-body">
+                        <h1>Tournaments are a regular occurance in our club!</h1>
+                        <h3>We also meet outside the club for several fun and service activities.</h3>
+                    </div>
+                    <div class="section-footer">
+                        <p>Participate and be valued member of the society!!
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- Services Section -->
+            <section id="services" class="section service-section">
+                <div class="container text-center">
+                    <h2>Our Services</h2>
+                    <div class="row mt-4">
+                        <div class="col-md-4 img-parent" id="schedule">
+                            <div class="img-block">
+                                <div class="img-holder img-block-schedule"></div>
+                                <div class="desc">Schedule and participate in exciting matches.</div>
+                                <div class="header">Match Scheduling</div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 img-parent" id="community">
+                            <div class="img-block">
+                                <div class="img-holder img-block-community"></div>
+                                <div class="desc">Join a thriving community of badminton lovers.</div>
+                                <div class="header">Community</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 img-parent" id="benefits">
+                            <div class="img-block">
+                                <div class="img-holder img-block-community"></div>
+                                <div class="desc">Understand benefits of joining us.</div>
+                                <div class="header">Benefits</div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </header>
+            </section>
 
-
-
-    <!-- About Section -->
-    <section id="about" class="py-5 bg-light">
-        <div class="container text-center">
-            <h2>About Us</h2>
-            <p class="lead">Frenz Badminton Club brings together players of all skill levels to enjoy and excel at the
-                sport.</p>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="py-5">
-        <div class="container text-center">
-            <h2>Our Services</h2>
-            <div class="row mt-4">
-                <div class="col-md-4 img-parent">
-                    <div class="img-block">
-                        <div class="img-holder img-block-schedule"></div>
-                        <div class="desc">Schedule and participate in exciting matches.</div>
-                        <div class="header">Match Scheduling</div>
-                    </div>
-
+            <!-- Contact Section -->
+            <section id="contact" class="py-5">
+                <div class="container text-center">
+                    <h2>Contact Us</h2>
+                    <p>Email: <a href="mailto:contact@frenzbadmintonclub.com">contact@frenzbadmintonclub.com</a></p>
+                    <p>Phone: +123-456-7890</p>
                 </div>
-                <div class="col-md-4 img-parent">
-                    <div class="img-block">
-                        <div class="img-holder img-block-tournament"></div>
-                        <div class="desc">Compete in tournaments and climb the leaderboard.</div>
-                        <div class="header">Tournaments</div>
-                    </div>
-                </div>
-                <div class="col-md-4 img-parent">
-                    <div class="img-block">
-                        <div class="img-holder img-block-community"></div>
-                        <div class="desc">Join a thriving community of badminton lovers.</div>
-                        <div class="header">Community</div>
-                    </div>
-
-                </div>
-            </div>
+            </section>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
-        <div class="container text-center">
-            <h2>Contact Us</h2>
-            <p>Email: <a href="mailto:contact@frenzbadmintonclub.com">contact@frenzbadmintonclub.com</a></p>
-            <p>Phone: +123-456-7890</p>
-        </div>
-    </section>
-
+    </div>
     <!-- Footer -->
     <footer class="bg-dark text-center text-white py-3">
         <p>&copy; 2024 Frenz Badminton Club. All rights reserved.</p>
     </footer>
 
+
+    <div class="modal fade" id="logoModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel">Our Logo.. Heart of the Lion!!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Image Inside Modal -->
+                    <img src="./images/logo.jpeg" alt="Popup Image" class="modal-image">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
